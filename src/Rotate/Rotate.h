@@ -1,10 +1,11 @@
 #pragma once
 
+#include "Interfaces/ICommand.h"
 #include "Interfaces/IRotable.h"
 
 namespace SpaceBattle
 {
-    class Rotate
+    class Rotate : public ICommand
     {
     public:
         explicit Rotate(IRotable& rotable);
