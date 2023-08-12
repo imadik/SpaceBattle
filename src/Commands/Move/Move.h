@@ -9,7 +9,11 @@ namespace SpaceBattle
     {
     public:
         explicit Move(IMovable& movable);
-        void execute();
+        void execute() override;
+        CommandType getType() const override
+        {
+            return CommandType::MOVE;
+        }
     private:
         IMovable& mMovable;
     };

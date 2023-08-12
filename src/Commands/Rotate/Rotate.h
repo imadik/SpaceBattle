@@ -9,7 +9,12 @@ namespace SpaceBattle
     {
     public:
         explicit Rotate(IRotable& rotable);
-        void execute();
+        Rotate(const Rotate&) = default;
+        void execute() override;
+        CommandType getType() const override
+        {
+            return CommandType::ROTATE;
+        }
     private:
         IRotable& mRotable;
     };

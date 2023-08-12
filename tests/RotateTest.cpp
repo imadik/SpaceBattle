@@ -1,5 +1,5 @@
-#include "Rotate/Rotate.h"
-#include "RotableAdapter/RotableAdapter.h"
+#include "Commands/Rotate/Rotate.h"
+#include "Adapters/RotableAdapter/RotableAdapter.h"
 #include "MockObjects/MockObjects.h"
 #include <cmath>
 
