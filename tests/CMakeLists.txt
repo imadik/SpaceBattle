@@ -41,7 +41,8 @@ FetchContent_MakeAvailable(googletest)
 
 set(sources
     MoveTest.cpp
-    RotateTest.cpp)
+    RotateTest.cpp
+    ExceptionsTest.cpp)
 source_group(TREE "${CMAKE_CURRENT_SOURCE_DIR}" FILES ${sources})
 
 #----------------------------------------------------------------------------------------------------------------------

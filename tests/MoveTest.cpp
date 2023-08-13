@@ -1,5 +1,5 @@
-#include "Move/Move.h"
-#include "MovableAdapter/MovableAdapter.h"
+#include "Commands/Move/Move.h"
+#include "Adapters/MovableAdapter/MovableAdapter.h"
 #include "MockObjects/MockObjects.h"
 #include <cmath>
 
