@@ -9,6 +9,7 @@ namespace SpaceBattle
     {
         FIRST,
         SECOND,
+        COMMAND,
     };
 
     class IException: public std::exception

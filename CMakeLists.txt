@@ -6,12 +6,16 @@ project(SpaceBattle VERSION 0.1.0 LANGUAGES C CXX)
 option(MYLIB_BUILD_TESTS "Build mylib tests" ON)
 
 set(sources
-    src/Adapters/MovableAdapter/MovableAdapter.cpp
-    src/Adapters/RotableAdapter/RotableAdapter.cpp
+    src/Adapters/FuelAdapters/BurnFuelAdapter.cpp
+    src/Adapters/FuelAdapters/CheckFuelAdapter.cpp
+    src/Adapters/MoveAdapters/MovableAdapter.cpp
+    src/Adapters/MoveAdapters/RotableAdapter.cpp
     src/Commands/Move/Move.cpp
     src/Commands/Rotate/Rotate.cpp
     src/Commands/LogException/LogException.cpp
     src/Commands/RepeatCommand/RepeatCommand.cpp
+    src/Commands/BurnFuel/BurnFuel.cpp
+    src/Commands/CheckFuel/CheckFuel.cpp
     src/Exceptions/ExceptionHandler.cpp
     src/Types/Direction.cpp)
     

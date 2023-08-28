@@ -1,7 +1,6 @@
 #include "Commands/Rotate/Rotate.h"
-#include "Adapters/RotableAdapter/RotableAdapter.h"
+#include "Adapters/MoveAdapters/RotableAdapter.h"
 #include "MockObjects/MockObjects.h"
-#include <cmath>
 
 #include <gtest/gtest.h>
 
