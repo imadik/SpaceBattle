@@ -1,5 +1,5 @@
 #include "BurnFuel.h"
-#include "Exceptions/CommandException.h"
+#include "Exceptions/FuelException.h"
 
 namespace SpaceBattle
 {
@@ -14,7 +14,7 @@ namespace SpaceBattle
         const auto fuelConsumption = mFuelBurnable.getFuelConsumption();
         if (fuelConsumption > availableFuel)
         {
-            throw CommandException();
+            throw FuelException();
         }
         mFuelBurnable.setAvailableFuel(availableFuel - fuelConsumption);
     }

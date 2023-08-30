@@ -22,6 +22,11 @@ namespace SpaceBattle
         return mDirection == other.mDirection;
     }
 
+    int Direction::getDirection() const
+    {
+        return mDirection;
+    }
+
     int Direction::countPositiveDirection(int direction) const
     {
         return (DIRECTION_NUM + (direction % DIRECTION_NUM)) % DIRECTION_NUM;

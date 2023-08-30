@@ -1,6 +1,6 @@
 #include "Commands/CheckFuel/CheckFuel.h"
 #include "Adapters/FuelAdapters/CheckFuelAdapter.h"
-#include "Exceptions/CommandException.h"
+#include "Exceptions/FuelException.h"
 #include "MockObjects/MockObjects.h"
 
 #include <gtest/gtest.h>
@@ -37,7 +37,7 @@ namespace SpaceBattleTest
         SpaceBattle::CheckFuel checkFuel(checkFuelAdapter);
         EXPECT_CALL(mockUObject, getProperty("available_fuel")).Times(1).WillRepeatedly(Return(availableFuel));
         EXPECT_CALL(mockUObject, getProperty("fuel_consumption")).Times(1).WillRepeatedly(Return(fuelConsumption));
-        EXPECT_THROW(checkFuel.execute(), SpaceBattle::CommandException);
+        EXPECT_THROW(checkFuel.execute(), SpaceBattle::FuelException);
     }
 
     TEST_F(CheckFuelTest, error_get_available_fuel)

@@ -44,7 +44,9 @@ set(sources
     RotateTest.cpp
     ExceptionsTest.cpp
     CheckFuelTest.cpp
-    BurnFuelTest.cpp)
+    BurnFuelTest.cpp
+    ChangeVelocityTest.cpp
+    MacroCommandTest.cpp)
 source_group(TREE "${CMAKE_CURRENT_SOURCE_DIR}" FILES ${sources})
 
 #----------------------------------------------------------------------------------------------------------------------

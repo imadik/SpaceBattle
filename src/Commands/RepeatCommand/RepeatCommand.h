@@ -3,7 +3,6 @@
 #include "Interfaces/ICommand.h"
 #include "Interfaces/IException.h"
 #include <memory>
-#include <string>
 
 namespace SpaceBattle
 {

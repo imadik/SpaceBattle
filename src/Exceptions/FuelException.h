@@ -4,12 +4,12 @@
 
 namespace SpaceBattle
 {
-    class CommandException: public IException
+    class FuelException: public IException
     {
     public:
         ExceptionType getType() const 
         {
-            return ExceptionType::MACRO_COMMAND;
+            return ExceptionType::FUEL;
         };
     };
 }
