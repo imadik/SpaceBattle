@@ -9,6 +9,8 @@ namespace SpaceBattle
     {
         FIRST,
         SECOND,
+        FUEL,
+        MACRO_COMMAND,
     };
 
     class IException: public std::exception

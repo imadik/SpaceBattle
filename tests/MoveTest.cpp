@@ -1,7 +1,6 @@
 #include "Commands/Move/Move.h"
-#include "Adapters/MovableAdapter/MovableAdapter.h"
+#include "Adapters/MoveAdapters/MovableAdapter.h"
 #include "MockObjects/MockObjects.h"
-#include <cmath>
 
 #include <gtest/gtest.h>
 

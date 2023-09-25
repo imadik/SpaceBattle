@@ -3,21 +3,22 @@
 #include "Interfaces/ICommand.h"
 #include "Interfaces/IException.h"
 #include <memory>
+#include <vector>
 
 namespace SpaceBattle
 {
-    class RepeatCommand : public ICommand
+    class MacroCommand : public ICommand
     {
     public:
-        RepeatCommand(std::unique_ptr<ICommand> command);
+        MacroCommand(std::vector<std::unique_ptr<ICommand>> commands);
         void execute() override;
 
         CommandType getType() const override
         {
-            return mCommand->getType();
+            return CommandType::MACRO_COMMAND;
         }
 
     private:
-        std::unique_ptr<ICommand> mCommand;
+        std::vector<std::unique_ptr<ICommand>> mCommands;
     };
 }

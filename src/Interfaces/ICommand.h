@@ -8,6 +8,10 @@ namespace SpaceBattle
         ROTATE,
         LOG,
         REPEAT,
+        CHECK_FUEL,
+        BURN_FUEL,
+        CHANGE_VELOCITY,
+        MACRO_COMMAND,
     };
 
     class ICommand
